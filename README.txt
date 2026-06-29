@@ -12,7 +12,3 @@ How to update foods:
 2. Add or remove items inside the relevant category
 3. Upload/commit changes to GitHub
 4. GitHub Pages will update automatically
-
-GitHub Pages:
-Upload all files to the root of your repository.
-Settings > Pages > Deploy from a branch > main > /root.
