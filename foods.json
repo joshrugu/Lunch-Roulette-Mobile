@@ -1,0 +1,270 @@
+{
+  "categories": [
+    {
+      "name": "🍛 Malaysian Rice",
+      "color": "#FFD166",
+      "budget": "RM10–25",
+      "foods": [
+        "Nasi Ayam",
+        "Nasi Lemak",
+        "Nasi Kandar",
+        "Nasi Campur",
+        "Ayam Gepuk",
+        "Ayam Penyet",
+        "Briyani",
+        "Banana Leaf Rice",
+        "Claypot Chicken Rice",
+        "Hainanese Chicken Rice",
+        "Roast Duck Rice",
+        "Fried Rice",
+        "Nasi Padang",
+        "Kam Heong Rice"
+      ]
+    },
+    {
+      "name": "🍜 Malaysian Noodles",
+      "color": "#F4A261",
+      "budget": "RM9–20",
+      "foods": [
+        "Pan Mee",
+        "Curry Mee",
+        "Sarawak Laksa",
+        "Asam Laksa",
+        "Mee Goreng",
+        "Hokkien Mee",
+        "Wantan Mee",
+        "Kolo Mee",
+        "Prawn Mee",
+        "Mee Soto",
+        "Mee Rebus",
+        "Char Kuey Teow",
+        "Dry Chili Pan Mee",
+        "Ipoh Hor Fun"
+      ]
+    },
+    {
+      "name": "🥟 Hawker Favourites",
+      "color": "#FFAFCC",
+      "budget": "RM8–22",
+      "foods": [
+        "Dim Sum",
+        "Yong Tau Foo",
+        "Lok Lok",
+        "Satay",
+        "Chee Cheong Fun",
+        "Curry Chee Cheong Fun",
+        "Roti Canai",
+        "Roti Telur",
+        "Murtabak",
+        "Pasembur",
+        "Rojak",
+        "Oyster Omelette",
+        "Otak-Otak"
+      ]
+    },
+    {
+      "name": "🍔 Burgers & Sandwiches",
+      "color": "#A0C4FF",
+      "budget": "RM12–30",
+      "foods": [
+        "Burger",
+        "Chicken Burger",
+        "Beef Burger",
+        "Sandwich",
+        "Club Sandwich",
+        "Chicken Wrap",
+        "Hot Dog",
+        "Subway-style Sandwich",
+        "Grilled Cheese"
+      ]
+    },
+    {
+      "name": "🍕 Western",
+      "color": "#BDB2FF",
+      "budget": "RM18–45",
+      "foods": [
+        "Pizza",
+        "Pasta",
+        "Steak",
+        "Fish & Chips",
+        "Mac & Cheese",
+        "Chicken Chop",
+        "Lamb Chop",
+        "Mushroom Soup & Garlic Bread",
+        "Mixed Grill"
+      ]
+    },
+    {
+      "name": "🍣 Japanese",
+      "color": "#80ED99",
+      "budget": "RM18–50",
+      "foods": [
+        "Sushi",
+        "Ramen",
+        "Bento",
+        "Donburi",
+        "Japanese Curry Rice",
+        "Udon",
+        "Soba",
+        "Gyoza",
+        "Onigiri",
+        "Katsu Don"
+      ]
+    },
+    {
+      "name": "🇰🇷 Korean",
+      "color": "#90DBF4",
+      "budget": "RM18–45",
+      "foods": [
+        "Korean Fried Chicken",
+        "Bibimbap",
+        "Bulgogi",
+        "Kimchi Stew",
+        "Tteokbokki",
+        "Kimbap",
+        "Japchae",
+        "Ramyeon"
+      ]
+    },
+    {
+      "name": "🌮 Mexican & Middle Eastern",
+      "color": "#FFC6FF",
+      "budget": "RM15–35",
+      "foods": [
+        "Tacos",
+        "Burrito",
+        "Shawarma",
+        "Kebab",
+        "Falafel Wrap",
+        "Quesadilla",
+        "Chicken Rice Bowl",
+        "Hummus Plate"
+      ]
+    },
+    {
+      "name": "🥗 Healthy Choices",
+      "color": "#CAFFBF",
+      "budget": "RM15–35",
+      "foods": [
+        "Caesar Salad",
+        "Chicken Salad",
+        "Grain Bowl",
+        "Poke Bowl",
+        "Chicken Wrap",
+        "Vegetarian Rice",
+        "Soup & Bread",
+        "Baked Potato",
+        "Fruit Bowl"
+      ]
+    },
+    {
+      "name": "☕ Café Lunch",
+      "color": "#D7CCC8",
+      "budget": "RM15–40",
+      "foods": [
+        "Big Breakfast",
+        "Toast Set",
+        "Croissant Sandwich",
+        "Soup & Bread",
+        "Quiche",
+        "Chicken Pie",
+        "Pesto Pasta",
+        "Egg Mayo Sandwich"
+      ]
+    },
+    {
+      "name": "🍱 Food Court Classics",
+      "color": "#FDFFB6",
+      "budget": "RM8–20",
+      "foods": [
+        "Economy Rice",
+        "Mixed Rice",
+        "Mixed Grill",
+        "Honey Chicken Rice",
+        "Sweet & Sour Fish Rice",
+        "Sambal Squid Rice",
+        "Butter Chicken Rice",
+        "Salted Egg Chicken Rice"
+      ]
+    },
+    {
+      "name": "⚡ Fast Food",
+      "color": "#FFADAD",
+      "budget": "RM12–30",
+      "foods": [
+        "Fried Chicken",
+        "Burger Set",
+        "Nuggets",
+        "Wrap",
+        "Fries Combo",
+        "Chicken Tenders",
+        "Fish Burger",
+        "Spicy Chicken Burger"
+      ]
+    },
+    {
+      "name": "🎲 Chaos",
+      "color": "#C77DFF",
+      "budget": "Fate decides",
+      "foods": [
+        "Your colleague decides",
+        "First food you see on Grab",
+        "Under RM15 Challenge",
+        "Walk somewhere new",
+        "Make it extra spicy",
+        "Healthy only",
+        "Spin again and accept",
+        "Ask ChatGPT"
+      ]
+    },
+    {
+      "name": "🌟 Lucky",
+      "color": "#06D6A0",
+      "budget": "Worth it",
+      "foods": [
+        "Golden Fork: Eat Anything",
+        "Dessert Before Lunch",
+        "Upgrade to Combo",
+        "You Choose Everyone's Lunch",
+        "Lucky Wallet",
+        "Double Spin",
+        "Buy Someone a Drink"
+      ]
+    },
+    {
+      "name": "☠️ Legendary",
+      "color": "#EF476F",
+      "budget": "RM0–??",
+      "foods": [
+        "Fast Today",
+        "Leftovers Only",
+        "No Phone During Lunch"
+      ]
+    },
+    {
+      "name": "❓ Chef's Surprise",
+      "color": "#F6C945",
+      "budget": "Mystery",
+      "foods": []
+    }
+  ],
+  "challenges": [
+    "Bring one colleague.",
+    "Try a drink you never order.",
+    "Rate your lunch out of 10.",
+    "Take a food photo for the office chat.",
+    "Sit with someone new.",
+    "No complaining for 30 minutes.",
+    "Recommend this food to one person.",
+    "Find the cheapest version nearby."
+  ],
+  "fortunes": [
+    "May your queue be short and your portion generous.",
+    "The fork has spoken. HR was not consulted.",
+    "Today’s meal has main character energy.",
+    "A great conversation may be hiding behind this lunch.",
+    "Lunch fate has clocked in early today.",
+    "This is edible decision-making.",
+    "Your stomach has excellent project management today."
+  ]
+}

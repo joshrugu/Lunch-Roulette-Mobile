@@ -1,0 +1,223 @@
+:root {
+  --ink: #24170f;
+  --muted: rgba(36, 23, 15, .68);
+  --card: rgba(255, 255, 255, .78);
+  --line: rgba(36, 23, 15, .09);
+  --shadow: 0 18px 48px rgba(43, 27, 14, .18);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  min-height: 100svh;
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at 10% 10%, #fff0b8, transparent 33%),
+    radial-gradient(circle at 90% 15%, #ffd7e8, transparent 34%),
+    radial-gradient(circle at 50% 95%, #dff0ff, transparent 36%),
+    #fff7ed;
+}
+
+.app {
+  height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: max(10px, env(safe-area-inset-top)) 10px max(10px, env(safe-area-inset-bottom));
+}
+
+.card {
+  width: min(420px, 96vw);
+  height: min(760px, 100%);
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  background: var(--card);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
+  gap: 9px;
+}
+
+header { text-align: center; }
+
+.eyebrow {
+  margin: 0 0 2px;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(31px, 9vw, 43px);
+  line-height: .92;
+  letter-spacing: -1.8px;
+}
+
+.subtitle {
+  margin: 5px auto 0;
+  max-width: 310px;
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--muted);
+}
+
+.wheel-area {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 220px;
+}
+
+canvas {
+  width: min(235px, 61vw, 30svh);
+  height: min(235px, 61vw, 30svh);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 8px rgba(255,255,255,.72), 0 14px 26px rgba(67,43,20,.14);
+  transition: transform 4.7s cubic-bezier(.12,.7,.08,1);
+}
+
+.pointer {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 28px solid var(--ink);
+  filter: drop-shadow(0 5px 6px rgba(0,0,0,.22));
+}
+
+button {
+  width: 100%;
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 14px;
+  font-size: 14px;
+  font-weight: 950;
+  cursor: pointer;
+  transition: transform .15s ease, opacity .15s ease;
+}
+
+button:hover { transform: translateY(-1px); }
+button:active { transform: translateY(1px); }
+button:disabled { opacity: .55; cursor: wait; }
+
+.primary {
+  color: white;
+  background: var(--ink);
+  box-shadow: 0 12px 22px rgba(36,23,15,.2);
+}
+
+.secondary {
+  color: var(--ink);
+  background: rgba(255,255,255,.7);
+  border: 1px solid var(--line);
+}
+
+.result {
+  min-height: 0;
+  display: grid;
+  align-content: start;
+}
+
+.pill {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 0 7px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.66);
+  border: 1px solid var(--line);
+  font-size: 12px;
+  font-weight: 900;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+h2 {
+  margin: 0 0 8px;
+  font-size: clamp(28px, 8vw, 39px);
+  line-height: .98;
+  letter-spacing: -1.2px;
+}
+
+.meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+  margin-bottom: 8px;
+}
+
+.meta div {
+  padding: 8px;
+  border-radius: 15px;
+  background: rgba(255,255,255,.56);
+  border: 1px solid var(--line);
+}
+
+.meta span {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.meta strong {
+  display: block;
+  font-size: 12px;
+  line-height: 1.15;
+}
+
+.fortune {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.28;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.confetti {
+  position: fixed;
+  width: 9px;
+  height: 13px;
+  top: -20px;
+  pointer-events: none;
+  animation: fall 1.8s linear forwards;
+  z-index: 999;
+}
+
+@keyframes fall {
+  to { transform: translateY(110vh) rotate(720deg); opacity: .8; }
+}
+
+@media (max-height: 680px) {
+  .card { gap: 7px; padding: 12px; }
+  .subtitle { display: none; }
+  .wheel-area { min-height: 190px; }
+  canvas { width: min(200px, 54vw, 29svh); height: min(200px, 54vw, 29svh); }
+  h2 { font-size: clamp(25px, 7.4vw, 34px); }
+}
+
+@media (min-width: 820px) {
+  .card { width: min(460px, 92vw); }
+  canvas { width: 260px; height: 260px; }
+}

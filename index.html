@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Lunch Roulette</title>
+  <meta name="description" content="Spin the office Lunch Roulette and let fate choose your lunch." />
+  <meta name="theme-color" content="#fff7ed" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="card">
+      <header>
+        <p class="eyebrow">🍽️ Office Lunch Picker</p>
+        <h1>Lunch Roulette</h1>
+        <p class="subtitle">Spin once. Let hunger and probability settle the argument.</p>
+      </header>
+
+      <div class="wheel-area">
+        <div class="pointer" aria-hidden="true"></div>
+        <canvas id="wheel" width="800" height="800" aria-label="Lunch category roulette wheel"></canvas>
+      </div>
+
+      <button id="spinBtn" class="primary">🎡 Spin Now</button>
+
+      <section class="result" aria-live="polite">
+        <p id="category" class="pill">🍴 Ready when hungry</p>
+        <h2 id="food">Ready to spin?</h2>
+
+        <div class="meta">
+          <div>
+            <span>Budget</span>
+            <strong id="budget">RM?</strong>
+          </div>
+          <div>
+            <span>Challenge</span>
+            <strong id="challenge">Spin first</strong>
+          </div>
+        </div>
+
+        <p id="fortune" class="fortune">Your lunch fate is currently marinating.</p>
+      </section>
+
+      <button id="copyBtn" class="secondary">📋 Copy Result</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
